@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .status-container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #6610f2; /* Purple glow */
+            position: relative;
+            z-index: 1;
+        }
+
+        .status-container:hover {
+            box-shadow: 0 0 30px 10px #6610f2; /* Glow effect */
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+        }
+
+        .product-name {
+            font-size: 18px;
+        }
+
+        .status {
+            padding: 5px 15px;
+            border-radius: 15px;
+            background-color: #28a745; /* Green */
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="status-container">
+        <div class="product">
+            <span class="product-name">Fortnite External</span>
+            <span class="status">Undetected</span>
+        </div>
+        <div class="product">
+            <span class="product-name">Bo6 External</span>
+            <span class="status">Undetected</span>
+        </div>
+        <div class="product">
+            <span class="product-name">MW3 External</span>
+            <span class="status">Undetected</span>
+        </div>
+        <div class="product">
+            <span class="product-name">Apex External</span>
+            <span class="status">Undetected</span>
+        </div>
+        <div class="product">
+            <span class="product-name">Rust External</span>
+            <span class="status">Undetected</span>
+        </div>
+        <div class="product">
+            <span class="product-name">Noxar Fortnite</span>
+            <span class="status">Undetected</span>
+        </div>
+        <div class="product">
+            <span class="product-name">R6 Chams</span>
+            <span class="status">Undetected</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        /* Particle.js Configuration */
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 50,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: { value: "#ffffff" },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
